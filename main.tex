@@ -138,135 +138,14 @@
 }
 
 
-\frame{
-\begin{center}
-\color[rgb]{0.2,0.2,0.698}{\LARGE{EMPIRICAL STRATEGY}}\\
-\end{center}
-}
-
-\frame[label = spec]{
-\frametitle{Specification}
-\small{\begin{itemize}
-    \item The equation used to measure the effect of monthly expenditure on time spent on learning is as follows: \begin{equation*}
-        Log(TL)_{ijt} = \beta_{0} + \beta_{1}Log(EXPM_{i}) + \gamma X_{i} + \mu_{j} + \nu_{t} + \varepsilon_{ijt}
-    \end{equation*}
-    where $Log(TL)_{ijt}$ is log of average time spent on learning by members of $i$ household, $j$ state $t$ in month $t$
-    \item $Log(EXPM_{i})$ is the log monthly expenditure on mobile phones. $\beta_{1}$ is the primary effect of interest.
-    \item $\mu_j$ and $\nu_j$ are state and time fixed effects.
-    \item $\text{X}_{i}$ is the control variables. 
-    \item $\varepsilon_{ijt}$ is the idiosyncratic error term that follows a $N(0,\sigma_{2})$.   
-    \end{itemize}
-\hyperlink{Appendix}{\beamerbutton{Appendix}}
-}}
-
-
-\frame{
-\frametitle{Regression Results}
-       %\centering \scriptsize{\input{table_REG}   
-      }
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FIGURE SLIDE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\frame{
-\frametitle{Heterogenous Treatment Effects}
-     
-\begin{figure}
-    \centering
-    %\framebox{\includegraphics[width=0.60\linewidth, height=0.40\linewidth]{Heterogenous_treatment_effects by gender.jpg}}
-    \caption{\footnotesize{Marginal Effect of Interaction between Monthly Consumption Expenditure and Gender Group}}
-\end{figure}
-        
-}
-
-
-\frame[label = post]{
-\frametitle{Post Analysis Discussion}
-\begin{itemize}
-    \item Autocorrelation
-    \item Heteroskedasticity
-    \item Outliers
-\end{itemize}
-\hyperlink{residuals}{\beamerbutton{Appendix}}
-}
-
-
-\frame{
-\frametitle{Possible Sources of Endogeneity}
-\begin{itemize}
-        \item \textit{Measurement Error and Reporting Bias}: Expenditure and Quantifying time spent on learning.
-        \item \textit{Omitted Variable Bias}: Baseline values of Y (Habit forming behaviour), Unmeasurables - curiousity to learn, district level infrastructure, etc.
-        \item \textit{Reverse Causality}: What if more time spent on learning leads to more expenditure on mobile phones? (Rational decision - ROI)
-\end{itemize}  
-}
-
-\frame{
-\frametitle{Future Directions}
-\begin{itemize}
-        \item More village level controls variables: Other data sources.
-        \item Use of instruments variables to address endogeneity (two i have tested).
-\end{itemize}  
-}
 
 
 
 \frame{
 \printbibliography
 }
-
-
-
-\frame{
-        \begin{center}
-            \color[rgb]{0.2,0.2,0.698}{\fontsize{40}{40}\selectfont Thank You}\\
-        \end{center}
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%     APPENDIX    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\frame[label=Appendix]{
-        \begin{center}
-            \color[rgb]{0.2,0.2,0.698}{\LARGE{Appendix}}\\
-        \end{center}
-}
-
-\frame{
-        \frametitle{Scatter Plot of Y and X}
-     
-                \begin{figure}
-                    \centering
-                    %\framebox{\includegraphics[width=0.60\linewidth, height=0.40\linewidth]{xyscatter.jpg}}
-                    %\caption{\footnotesize{Marginal Effect of Interaction between Monthly Consumption Expenditure and Gender Group}}
-                \end{figure}
-                \hyperlink{spec}{\beamerbutton{Back}}
-        
-}
-
-
-\frame[label = residuals]{
-        \frametitle{Normality of Residuals}
-     
-                \begin{figure}
-                    \centering
-                    %\framebox{\includegraphics[width=0.60\linewidth, height=0.40\linewidth]{qnorm_.jpg}}
-                    %\caption{\footnotesize{Marginal Effect of Interaction between Monthly Consumption Expenditure and Gender Group}}
-                \end{figure}
-                \hyperlink{post}{\beamerbutton{Back}}
-}
-
-\frame{
-        \frametitle{Residual Plot}
-     
-                \begin{figure}
-                    \centering
-                    %\framebox{\includegraphics[width=0.60\linewidth, height=0.40\linewidth]{residual_plot.jpg}}
-                    %\caption{\footnotesize{Marginal Effect of Interaction between Monthly Consumption Expenditure and Gender Group}}
-                \end{figure}
-                \hyperlink{post}{\beamerbutton{Back}}
-}
-
 
 
 
